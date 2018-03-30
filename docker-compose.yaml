@@ -16,7 +16,7 @@ services:
     extra_hosts:
       - "grafana.monitoring:172.16.239.11"
     networks:
-      monitoring_net:
+      monitoring:
         ipv4_address: 172.16.239.10
   grafana:
     container_name: grafana
@@ -34,7 +34,7 @@ services:
       - GF_SERVER_ROOT_URL=https://awesome.wuxinwei.org
       - GF_SECURITY_ADMIN_PASSWORD=b3525466
     networks:
-      monitoring_net:
+      monitoring:
         ipv4_address: 172.16.239.11
 
 networks:
