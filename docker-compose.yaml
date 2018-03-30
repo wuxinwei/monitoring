@@ -3,7 +3,7 @@ version: "2.3"
 services:
   prometeus:
     container_name: prometheus
-    image: prom/prometheus:v2.2
+    image: prom/prometheus:v2.2.0
     cpus: 1
     mem_limit: 1024m
     memswap_limit: 1024m
@@ -20,7 +20,7 @@ services:
         ipv4_address: 172.16.239.10
   grafana:
     container_name: grafana
-    image: grafana/grafana:5.0
+    image: grafana/grafana:5.0.0
     cpus: 1
     mem_limit: 1024m
     memswap_limit: 1024m
