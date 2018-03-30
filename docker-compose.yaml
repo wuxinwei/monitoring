@@ -31,8 +31,8 @@ services:
     extra_hosts:
       - "prometheus.monitoring:172.16.239.10"
     environment:
-      - GF_SERVER_ROOT_URL=https://awesome.wuxinwei.org
-      - GF_SECURITY_ADMIN_PASSWORD=b3525466
+      - GF_SERVER_ROOT_URL=http://awesome.wuxinwei.org
+      - GF_SECURITY_ADMIN_PASSWORD=123456789
     networks:
       monitoring:
         ipv4_address: 172.16.239.11
